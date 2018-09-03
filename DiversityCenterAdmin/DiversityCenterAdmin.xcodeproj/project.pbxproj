@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		527AACA2E28C043111BA392E /* Pods_DiversityCenterAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8434C5A5437916F80C1C9E /* Pods_DiversityCenterAdmin.framework */; };
-		C355DFEC213B2E2900C5241A /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C355DFEB213B2E2900C5241A /* Food101.mlmodel */; };
 		C355DFEE213B325000C5241A /* InventoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C355DFED213B325000C5241A /* InventoryTableViewController.swift */; };
 		C36B24B221323DA400A22370 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36B24B121323DA400A22370 /* LoginViewController.swift */; };
 		C36B24B621323EFC00A22370 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C36B24B521323EFB00A22370 /* GoogleService-Info.plist */; };
+		C3C51F60213CB13F00275CCD /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C3C51F5F213CB13F00275CCD /* Inceptionv3.mlmodel */; };
 		C3F0E9D72132293200FD998E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0E9D62132293200FD998E /* AppDelegate.swift */; };
 		C3F0E9D92132293200FD998E /* InsertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F0E9D82132293200FD998E /* InsertViewController.swift */; };
 		C3F0E9DC2132293200FD998E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F0E9DA2132293200FD998E /* Main.storyboard */; };
@@ -24,10 +24,10 @@
 		6F0B814DDFA135284D33C08C /* Pods-DiversityCenterAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiversityCenterAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiversityCenterAdmin/Pods-DiversityCenterAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		7C8434C5A5437916F80C1C9E /* Pods_DiversityCenterAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiversityCenterAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF10A78EEFCD625D43AB8D /* Pods-DiversityCenterAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiversityCenterAdmin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiversityCenterAdmin/Pods-DiversityCenterAdmin.debug.xcconfig"; sourceTree = "<group>"; };
-		C355DFEB213B2E2900C5241A /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
 		C355DFED213B325000C5241A /* InventoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewController.swift; sourceTree = "<group>"; };
 		C36B24B121323DA400A22370 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C36B24B521323EFB00A22370 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C3C51F5F213CB13F00275CCD /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		C3F0E9D32132293200FD998E /* DiversityCenterAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiversityCenterAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F0E9D62132293200FD998E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F0E9D82132293200FD998E /* InsertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		C3F0E9D52132293200FD998E /* DiversityCenterAdmin */ = {
 			isa = PBXGroup;
 			children = (
-				C355DFEB213B2E2900C5241A /* Food101.mlmodel */,
+				C3C51F5F213CB13F00275CCD /* Inceptionv3.mlmodel */,
 				C3F0E9EA21322ED500FD998E /* model */,
 				C3F0E9EB21322ED900FD998E /* view */,
 				C3F0E9EC21322EDD00FD998E /* controller */,
@@ -119,9 +119,9 @@
 		C3F0E9EC21322EDD00FD998E /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				C3F0E9D82132293200FD998E /* InsertViewController.swift */,
 				C3F0E9D62132293200FD998E /* AppDelegate.swift */,
 				C36B24B121323DA400A22370 /* LoginViewController.swift */,
+				C3F0E9D82132293200FD998E /* InsertViewController.swift */,
 				C355DFED213B325000C5241A /* InventoryTableViewController.swift */,
 			);
 			path = controller;
@@ -249,11 +249,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F0E9D92132293200FD998E /* InsertViewController.swift in Sources */,
+				C3C51F60213CB13F00275CCD /* Inceptionv3.mlmodel in Sources */,
 				C3F0E9EE21322EF800FD998E /* Alert.swift in Sources */,
 				C355DFEE213B325000C5241A /* InventoryTableViewController.swift in Sources */,
 				C36B24B221323DA400A22370 /* LoginViewController.swift in Sources */,
 				C3F0E9D72132293200FD998E /* AppDelegate.swift in Sources */,
-				C355DFEC213B2E2900C5241A /* Food101.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

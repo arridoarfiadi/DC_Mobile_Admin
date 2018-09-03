@@ -37,6 +37,7 @@ class InventoryTableViewController: UITableViewController {
         let item = ref.child("DCPantry").child(itemName[indexPath.row])
         let alert = UIAlertController(title: "Edit \(itemName[indexPath.row])", message: "Insert updated value", preferredStyle: .alert)
         alert.addTextField(configurationHandler: nil)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (alertAction) in
             item.removeValue()
             self.getData()
@@ -59,7 +60,6 @@ class InventoryTableViewController: UITableViewController {
         SVProgressHUD.show()
         let pantryDB = ref.child("DCPantry")
         pantryDB.observe(.childAdded) { (snapshot) in
-            print("test")
             let name = snapshot.key
             let number = snapshot.value as! String
             self.itemName.append(name)

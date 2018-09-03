@@ -27,6 +27,8 @@ class InsertViewController: UIViewController, UIImagePickerControllerDelegate, U
         imagePicker.delegate = self
         imagePicker.sourceType = .camera
         imagePicker.allowsEditing = true
+        let tapRecognition: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        self.view.addGestureRecognizer(tapRecognition)
     }
 
     func addAlert() {
@@ -62,7 +64,7 @@ class InsertViewController: UIViewController, UIImagePickerControllerDelegate, U
     func detectImage(image: CIImage){
         //VNCoreMLModel acts as a wrapper to the model we are using which is FlowerClassifier
         //Vision allows us to process image
-        guard let model = try? VNCoreMLModel(for: Food101().model) else {fatalError("Loading ML Model error")}
+        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {fatalError("Loading ML Model error")}
         
         //make new request
         //when completed it will get a request and errror
@@ -117,10 +119,11 @@ class InsertViewController: UIViewController, UIImagePickerControllerDelegate, U
                 self.present(alert,animated: true,completion: nil)
             }
         }
-
-        
-       
-        
+    }
+    
+    @objc func dismissKeyboard(){
+        amountLabel.endEditing(true)
+        itemLabel.endEditing(true)
     }
     
 }
