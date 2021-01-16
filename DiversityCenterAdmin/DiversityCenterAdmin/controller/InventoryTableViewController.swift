@@ -16,6 +16,8 @@ class InventoryTableViewController: UITableViewController {
     var ref: DatabaseReference = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
+		view.backgroundColor = .white
+		tableView.backgroundColor = .white
         getData()
     }
     // MARK: - Table view data source
